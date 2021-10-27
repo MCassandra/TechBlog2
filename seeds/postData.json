@@ -1,0 +1,15 @@
+[
+    {
+        "user_id": 1,
+        "post": "MySQL or noSQL?"
+    },
+    {
+        "user_id": 2,
+        "post": "Javascript resources"
+    },
+    {
+        "user_id": 3,
+        "post": "whats a good npm package for logging?"
+    }
+    
+  ]
