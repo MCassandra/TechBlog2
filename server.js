@@ -38,11 +38,9 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-if (process.env.dev === true) {
-  app.use(express.static(path.join(__dirname, 'public')));
-} else {
-  (app.use(express.static(path.join(__dirname, 'dist'))))
-};
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 morgan(app);
 

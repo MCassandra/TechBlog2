@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     const postData = await Post.findAll({
       include: [
         {
-          model: Users,
+          model: User,
           attributes: ['name'],
         },
       ],
@@ -68,7 +68,7 @@ router.get('/post/:id', async (req, res) => {
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
-    const userData = await Users.findByPk(req.session.user_id, {
+    const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Post, as: 'posts' }],
     });
