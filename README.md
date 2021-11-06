@@ -1,7 +1,7 @@
 # TechBlog2  
 
 ## Description  
-Create a CRUD blog site using Node.js, Express, Sequalize, and mySQL. This app requires login and password authentication for users to create, update, and delete posts on post they create and other users' posts.    
+Create a CRUD blog site using Node.js, Express, Sequalize, and mySQL. This app requires login and password authentication for users to create, update, and delete posts they create and other users' posts.    
 
 ## How it works:
 1. On landing page, user is required to sign in.  
@@ -15,3 +15,4 @@ GitHub repo:  https://github.com/MCassandra/TechBlog2
 <br>
 Deployed application: https://still-plains-97108.herokuapp.com/
 
+![screenshot of techblog home page. Has seeded data](assets/techblog.jpeg)
